@@ -52,34 +52,29 @@ ORDER BY 7 desc;
 --Include these data points in the output:
 
 --Business Entity ID
-
 --Full Name
-
 --Full Name Length
-
 --First Name
-
 --First Name Length
-
 --Middle Name
-
 --Last Name
-
 --Last Name Length
 
 --A2. 
---p.BusinessEntityID FullName FullNameLength LastNameLength 
---4388	Osarumwense Uwaifiokun Agbonile	31	Uwaifiokun	Agbonile	8
---1979	Ranjit Rudra Varkey Chudukatil	30	Rudra	Varkey Chudukatil	17
---272	Janaina Barreiro Gambaro Bueno	30	Barreiro Gambaro	Bueno	5
---2348	Janaina Barreiro Gambaro Bueno	30	Barreiro Gambaro	Bueno	5
---565	Janaina Barreiro Gambaro Bueno	30	NULL	Bueno	5
---775	Alvaro De Matos Miranda Filho	29	NULL	De Matos Miranda Filho	22
---1619	Paulo Sergio Da Silva Pinto	27	Sergio Da Silva	Pinto	5
+--Business Entity ID Full Name Full Name Length First Name First Name Length Middle Name Last Name Last Name Length
+--4388	Osarumwense Uwaifiokun Agbonile	31	Osarumwense	11	Uwaifiokun	Agbonile	8
+--1979	Ranjit Rudra Varkey Chudukatil	30	Ranjit	6	Rudra	Varkey Chudukatil	17
+--565	Janaina Barreiro Gambaro Bueno	30	Janaina Barreiro Gambaro	24	NULL	Bueno	5
+--272	Janaina Barreiro Gambaro Bueno	30	Janaina	7	Barreiro Gambaro	Bueno	5
+--2348	Janaina Barreiro Gambaro Bueno	30	Janaina	7	Barreiro Gambaro	Bueno	5
+--775	Alvaro De Matos Miranda Filho	29	Alvaro	6	NULL	De Matos Miranda Filho	22
+--1619	Paulo Sergio Da Silva Pinto	27	Paulo	5	Sergio Da Silva	Pinto	5
 
 SELECT TOP 7 p.BusinessEntityID
 			,replace(coalesce(p.FirstName, '') + ' ' + coalesce(p.MiddleName, '') + ' ' + coalesce(p.lastName,''), '  ', ' ') AS FullName
 			,len(replace(coalesce(p.FirstName, '') + ' ' + coalesce(p.MiddleName, '') + ' ' + coalesce(p.LastName, ''), '  ', ' ')) AS FullNameLength
+			,p.FirstName
+			,len(p.FirstName) AS FistNameLength
 			,p.MiddleName
 			,p.LastName
 			,len(p.LastName) AS LastNameLength
