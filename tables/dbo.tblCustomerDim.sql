@@ -1,0 +1,10 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [acct_id]
+      ,[prod_id]
+      ,[open_date]
+      ,[close_date]
+      ,[open_close_code]
+      ,[branch_id]
+      ,[pri_cust_id]
+      ,[loan_amt]
+  FROM [DFNB3].[dbo].[tblAccountDim]
