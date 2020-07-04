@@ -6,10 +6,10 @@ MODIFICATION LOG:
 Ver      Date        Author        Description
 -----   ----------   -----------   -------------------------------------------------------------------------------
 1.0     08/02/2019   JMUERAS       1. Built this table for LDS BC IT240
-1.1     10/27/2019   JMUERAS       1. Added fact table load for LDS BC IT243
-1.2     06/10/2020   JMUERAS       1. Added Team Name
-
-
+1.1     10/27/2019   JMUERAS       2. Added fact table load for LDS BC IT243
+1.2     06/10/2020   JMUERAS       3. Added Team Name
+1.3     06/27/2020   JMUERAS       3. Added Version 1 enhancements
+1.4     07/04/2020   JMUERAS       4. Added Version 2 enhancements
 
 RUNTIME: 
 Approx. 1 min
