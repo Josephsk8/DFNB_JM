@@ -10,6 +10,7 @@ Ver      Date        Author        Description
 1.2     06/10/2020   JMUERAS       3. Added Team Name
 1.3     06/27/2020   JMUERAS       3. Added Version 1 enhancements
 1.4     07/04/2020   JMUERAS       4. Added Version 2 enhancements
+1.5     07/18/2020   JMUERAS       4. Added Version 2 enhancements for LDSBC IT 240 - Project 3.6: DFNB - Predict and Prescribe Future Performance
 
 RUNTIME: 
 Approx. 1 min
