@@ -27,7 +27,7 @@ MODIFICATION LOG:
 Ver       Date         Author       Description
 -------   ----------   ----------   -----------------------------------------------------------------------------
 1.0       06/22/2020   JMueras      1. Built this view for LDS BC IT 240
-
+2.0       06/23/2020   JMueras      1. Added enhancements for LDSBC IT 240
 
 RUNTIME: 
 3s
